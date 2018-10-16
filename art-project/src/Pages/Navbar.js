@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+
+//Navbar at the top of all pages
 class Navbar extends Component {
   render() {
     return (
