@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Pages/Navbar'
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./Pages/Navbar";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+        <div className="App">
           <Navbar />
-      </div>
+          
+        </div>
     );
   }
 }
