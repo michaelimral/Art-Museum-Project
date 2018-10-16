@@ -6,13 +6,21 @@ class AddPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: '',
-      artist: '',
+      title: "",
+      artist: "",
       year: 0,
-      id: '',
-      location: '',
-      info: ''
-    }
+      id: "",
+      location: "",
+      info: ""
+    };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.setState = ({title: 'hello'})
+    console.log(this.state.title)
   }
 
   render() {
@@ -20,10 +28,22 @@ class AddPage extends Component {
       <div>
         <h2>Add a piece of art</h2>
         <form>
-        <div classname="input-group container-fluid">
+          <div classname="input-group container-fluid">
+            <div className="input-group-prepend">
+              <label className="input-group-text" id="inputGroup-sizing-lg">
+                Name of Painting
+              </label>
+            </div>
+            <input
+              type="text"
+              name="title"
+              className="form-control mb-4"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-lg">
-              Name of Painting
+              Artist
             </span>
           </div>
           <input
@@ -31,55 +51,54 @@ class AddPage extends Component {
             className="form-control mb-4"
             aria-describedby="inputGroup-sizing-lg"
           />
-        </div>
-        <div className="input-group-prepend">
-          <span className="input-group-text" id="inputGroup-sizing-lg">
-            Artist
-          </span>
-        </div>
-        <input
-          type="text"
-          className="form-control mb-4"
-          aria-describedby="inputGroup-sizing-lg"
-        />
-        <div className="input-group-prepend">
-          <span className="input-group-text" id="inputGroup-sizing-lg">
-            Year
-          </span>
-        </div>
-        <input
-          type="text"
-          className="form-control mb-4"
-          aria-describedby="inputGroup-sizing-lg"
-        />
-        <div className="input-group-prepend">
-          <span className="input-group-text" id="inputGroup-sizing-lg">
-            Art ID
-          </span>
-        </div>
-        <input
-          type="text"
-          className="form-control mb-4"
-          aria-describedby="inputGroup-sizing-lg"
-        />
-        <div className="input-group-prepend">
-          <span className="input-group-text" id="inputGroup-sizing-lg">
-            Current Location
-          </span>
-        </div>
-        <input
-          type="text"
-          className="form-control mb-4"
-          aria-describedby="inputGroup-sizing-lg"
-        />
-        <div className="input group-prepend">
-          <span className="input-group-text" id="inputGroup-sizing-lg">
-            Information/Description
-          </span>
-          <textarea className="form-control" id="exampleFormControlTextarea1" rows={3} defaultValue={""} />
-        </div>
-        <input className="btn btn-submit btn-primary" type="submit" value="Submit" />
-      </form>
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="inputGroup-sizing-lg">
+              Year
+            </span>
+          </div>
+          <input
+            type="text"
+            className="form-control mb-4"
+            aria-describedby="inputGroup-sizing-lg"
+          />
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="inputGroup-sizing-lg">
+              Art ID
+            </span>
+          </div>
+          <input
+            type="text"
+            className="form-control mb-4"
+            aria-describedby="inputGroup-sizing-lg"
+          />
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="inputGroup-sizing-lg">
+              Current Location
+            </span>
+          </div>
+          <input
+            type="text"
+            className="form-control mb-4"
+            aria-describedby="inputGroup-sizing-lg"
+          />
+          <div className="input group-prepend">
+            <span className="input-group-text" id="inputGroup-sizing-lg">
+              Information/Description
+            </span>
+            <textarea
+              className="form-control"
+              id="exampleFormControlTextarea1"
+              rows={3}
+              defaultValue={""}
+            />
+          </div>
+          <input
+            className="btn btn-submit btn-primary"
+            type="submit"
+            value="Submit"
+            onClick={this.handleSubmit}
+          />
+        </form>
       </div>
     );
   }
