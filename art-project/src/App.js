@@ -13,12 +13,12 @@ import { BrowserRouter, Route } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <div className="App">
-          <Navbar />
-          <AddPage />
-        </div>
-      </Router>
+        <Navbar />
+        <AddPage />
+</div>
+      </BrowserRouter>
     );
   }
 }
