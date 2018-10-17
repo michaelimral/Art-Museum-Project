@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ArtPiece from "./ArtPiece";
 
 //Parent component for the add art page
 //Read in the users inputs and converts it to an ArtPiece component
@@ -14,7 +15,9 @@ class AddPage extends Component {
       info: ""
     };
 
+    //binding this to all functions within the component
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleReset = this.handleReset.bind(this);
     this.handleTitle = this.handleTitle.bind(this);
     this.handleArtist = this.handleArtist.bind(this);
     this.handleYear = this.handleYear.bind(this);
@@ -23,37 +26,68 @@ class AddPage extends Component {
     this.handleInfo = this.handleInfo.bind(this);
   }
 
+  //handles the input field "submit" and creates new ArtPiece component with the defined attributes
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state);
+    return (
+      <ArtPiece
+        title={this.state.title}
+        artist={this.state.artist}
+        year={this.state.year}
+        id={this.state.id}
+        location={this.state.location}
+        info={this.state.info}
+      />
+    );
   }
 
-  handleTitle(e, newTitle) {
-    this.setState({ title: newTitle });
+  //dynamiclly updates title state attribute
+  handleTitle(e) {
+    this.setState({ title: e.target.value });
   }
 
+  //dynamically updates artist state attribute
   handleArtist(e) {
     this.setState({ artist: e.target.value });
   }
 
+  //dynamically updates creation year state attribute
   handleYear(e) {
     this.setState({ year: e.target.value });
   }
 
+  //dynamically updates the piece's tracking id state attribute
   handleID(e) {
     this.setState({ id: e.target.value });
   }
 
+  //dynamically updates the current location state attribute
   handleLocation(e) {
     this.setState({ location: e.target.value });
   }
 
+  //dynamically updates the description state attribute
   handleInfo(e) {
     this.setState({ info: e.target.value });
   }
 
+  //dynamically resets all input fields and state attributes
+  handleReset(e) {
+    e.preventDefault();
+    this.setState({
+      title: "",
+      artist: "",
+      year: 0,
+      id: "",
+      location: "",
+      info: ""
+    });
+  }
+
   render() {
     return (
+      //creates an input form for adding art pieces
       <div>
         <h2>Add a piece of art</h2>
         <form>
@@ -68,10 +102,7 @@ class AddPage extends Component {
               name="title"
               className="form-control mb-4"
               aria-describedby="inputGroup-sizing-lg"
-              onChange={e => {
-                console.log(e.target.value);
-                this.handleTitle(e, e.target.value);
-              }}
+              onChange={this.handleTitle}
             />
           </div>
           <div className="input-group-prepend">
@@ -131,7 +162,7 @@ class AddPage extends Component {
               Information/Description
             </span>
             <textarea
-              className="form-control"
+              className="form-control mb-4"
               name="info"
               value={this.state.info}
               id="exampleFormControlTextarea1"
@@ -141,10 +172,17 @@ class AddPage extends Component {
             />
           </div>
           <input
-            className="btn btn-submit btn-primary"
+            className="btn btn-submit btn-primary m-4"
             type="submit"
             value="Submit"
             onClick={this.handleSubmit}
+          />
+          <input
+            className="btn btn submit btn-danger"
+            type="submit"
+            value="Reset"
+            name="reset"
+            onClick={this.handleReset}
           />
         </form>
       </div>
