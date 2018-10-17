@@ -32,6 +32,7 @@ class AddPage extends Component {
     console.log(this.state);
     return (
       <ArtPiece
+        key={this.state.id}
         title={this.state.title}
         artist={this.state.artist}
         year={this.state.year}
