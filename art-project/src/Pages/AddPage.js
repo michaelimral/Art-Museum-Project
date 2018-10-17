@@ -30,32 +30,26 @@ class AddPage extends Component {
 
   handleTitle(e, newTitle) {
     this.setState({ title: newTitle });
-    console.log(this.state.title);
   }
 
   handleArtist(e) {
     this.setState({ artist: e.target.value });
-    console.log(this.state.artist);
   }
 
   handleYear(e) {
     this.setState({ year: e.target.value });
-    console.log(this.state.year);
   }
 
   handleID(e) {
     this.setState({ id: e.target.value });
-    console.log(this.state.id);
   }
 
   handleLocation(e) {
     this.setState({ location: e.target.value });
-    console.log(this.state.location);
   }
 
   handleInfo(e) {
     this.setState({ info: e.target.value });
-    console.log(this.state.info);
   }
 
   render() {
@@ -72,12 +66,11 @@ class AddPage extends Component {
             <input
               type="text"
               name="title"
-
               className="form-control mb-4"
               aria-describedby="inputGroup-sizing-lg"
               onChange={e => {
-                console.log(e.target.value)
-                this.handleTitle(e, e.target.value )
+                console.log(e.target.value);
+                this.handleTitle(e, e.target.value);
               }}
             />
           </div>
