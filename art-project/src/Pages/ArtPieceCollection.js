@@ -4,10 +4,10 @@ import ArtPiece from './ArtPiece';
 class ArtPieceCollection extends Component {
   constructor(props){
     super(props);
-    this.state={
+    this.state = {
       collection
       [
-          
+
       ]
     }
   }
