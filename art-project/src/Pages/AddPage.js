@@ -15,12 +15,40 @@ class AddPage extends Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleTitle = this.handleTitle.bind(this);
+    this.handleArtist = this.handleArtist.bind(this);
+    this.handleYear = this.handleYear.bind(this);
+    this.handleID = this.handleID.bind(this);
+    this.handleInfo = this.handleInfo.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState = ({title: 'hello'})
-    console.log(this.state.title)
+  }
+
+  handleTitle(e) {
+    this.setState({ title: e.target.value });
+    console.log(this.state.title);
+  }
+
+  handleArtist(e) {
+    this.setState({ artist: e.target.value });
+    console.log(this.state.artist);
+  }
+
+  handleYear(e) {
+    this.setState = { year: e.target.value };
+    console.log(this.state.year);
+  }
+
+  handleID(e) {
+    this.setState = { id: e.target.value };
+    console.log(this.state.id);
+  }
+
+  handleInfo(e) {
+    this.setState = { info: e.target.value };
+    console.log(this.state.info);
   }
 
   render() {
@@ -28,7 +56,7 @@ class AddPage extends Component {
       <div>
         <h2>Add a piece of art</h2>
         <form>
-          <div classname="input-group container-fluid">
+          <div>
             <div className="input-group-prepend">
               <label className="input-group-text" id="inputGroup-sizing-lg">
                 Name of Painting
@@ -39,6 +67,7 @@ class AddPage extends Component {
               name="title"
               className="form-control mb-4"
               aria-describedby="inputGroup-sizing-lg"
+              onChange={this.handleTitle}
             />
           </div>
           <div className="input-group-prepend">
@@ -48,8 +77,10 @@ class AddPage extends Component {
           </div>
           <input
             type="text"
+            name="artist"
             className="form-control mb-4"
             aria-describedby="inputGroup-sizing-lg"
+            onChange={this.handleArtist}
           />
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-lg">
@@ -57,9 +88,11 @@ class AddPage extends Component {
             </span>
           </div>
           <input
-            type="text"
+            type="number"
+            name="year"
             className="form-control mb-4"
             aria-describedby="inputGroup-sizing-lg"
+            onChange={this.handleYear}
           />
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-lg">
@@ -68,8 +101,10 @@ class AddPage extends Component {
           </div>
           <input
             type="text"
+            name="id"
             className="form-control mb-4"
             aria-describedby="inputGroup-sizing-lg"
+            onChange={this.handleID}
           />
           <div className="input-group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-lg">
@@ -87,9 +122,12 @@ class AddPage extends Component {
             </span>
             <textarea
               className="form-control"
+              name="info"
+              value={this.state.value}
               id="exampleFormControlTextarea1"
               rows={3}
               defaultValue={""}
+              onChange={this.handleInfo}
             />
           </div>
           <input
