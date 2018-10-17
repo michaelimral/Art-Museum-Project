@@ -101,6 +101,7 @@ class AddPage extends Component {
             <input
               type="text"
               name="title"
+              value={this.state.title}
               className="form-control mb-4"
               aria-describedby="inputGroup-sizing-lg"
               onChange={this.handleTitle}
@@ -127,7 +128,7 @@ class AddPage extends Component {
           <input
             type="number"
             name="year"
-            state={this.state.year}
+            value={this.state.year}
             className="form-control mb-4"
             aria-describedby="inputGroup-sizing-lg"
             onChange={this.handleYear}
