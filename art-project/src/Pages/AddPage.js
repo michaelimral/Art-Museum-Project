@@ -83,7 +83,7 @@ class AddPage extends Component {
       id: "",
       location: "",
       info: ""
-    }); 
+    });
   }
 
   render() {
