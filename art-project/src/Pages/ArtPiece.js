@@ -15,7 +15,7 @@ class ArtPiece extends Component {
     };
   }
 
-  //gets the values from db.json and sets them to the state
+  //gets the values from db.json and sets them to state
   componentDidMount() {
     axios
       .get("http://localhost:8080/art")
@@ -28,14 +28,13 @@ class ArtPiece extends Component {
           location: response.data[this.props.id].data.location,
           info: response.data[this.props.id].data.info
         });
-        console.log(this.state);
       })
       .catch(e => console.log(e));
   }
 
   render() {
     return (
-      //card element with title and artist
+      //card element with title, artist, and a view button
       <div>
         <div className="card" style={{ width: "18rem" }}>
           <div className="card-body">

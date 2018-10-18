@@ -31,8 +31,8 @@ class Navbar extends Component {
               </li>
             </ul>
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item pull-right">
-                <a className="nav-link">Sign In</a>
+              <li className="nav-item pull-right mb-3">
+                <Link to="/signin" className="nav-link">Sign In</Link>
               </li>
             </ul>
           </div>

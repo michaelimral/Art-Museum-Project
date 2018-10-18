@@ -20,17 +20,16 @@ class FindPage extends Component {
           pieces: response.data,
           length: response.data.length
         });
-        console.log(this.state.pieces)
-      }
-    )
+      })
       .catch(e => console.log(e));
   }
 
   render() {
     return (
+      //state maps each component with an id prop corresponding to their id in db.json
       <div>
         {this.state.pieces.map(data => {
-           return <ArtPiece id={data.id-1} />
+          return <ArtPiece id={data.id - 1} />;
         })}
       </div>
     );

@@ -9,8 +9,8 @@ import AddPage from "./Pages/AddPage";
 import ArtPieceCollection from "./Pages/ArtPieceCollection";
 import FindPage from "./Pages/FindPage";
 import ArtPiece from "./Pages/ArtPiece";
-import Home from './Pages/Home';
-import SignIn from './Pages/SignIn';
+import Home from "./Pages/Home";
+import SignIn from "./Pages/SignIn";
 
 //Router imports
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -23,9 +23,9 @@ class App extends Component {
           <div>
             <Navbar />
             <div>
-              <Router path = "/" component = {Home} />
-              <Route path = "/add" component = {AddPage} />
-              <Route path = "/find" component = {FindPage} />
+              <Router path="/" component={Home} />
+              <Route path="/add" component={AddPage} />
+              <Route path="/find" component={FindPage} />
               <Route path="/signin" component={SignIn} />
             </div>
           </div>
