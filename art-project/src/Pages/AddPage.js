@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ArtPiece from "./ArtPiece";
+import axios from 'axios';
 
 //Parent component for the add art page
 //Read in the users inputs and converts it to an ArtPiece component
@@ -26,21 +27,14 @@ class AddPage extends Component {
     this.handleInfo = this.handleInfo.bind(this);
   }
 
-  //handles the input field "submit" and creates new ArtPiece component with the defined attributes
+  //handles the input field "submit" and posts the new data to db.json
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state);
-    return (
-      <ArtPiece
-        key={this.state.id}
-        title={this.state.title}
-        artist={this.state.artist}
-        year={this.state.year}
-        id={this.state.id}
-        location={this.state.location}
-        info={this.state.info}
-      />
-    );
+    let data = this.state;
+    axios.post('http://localhost:8080/art', {data})
+    .then(data => console.log(data))
+    .catch(e => console.log(e));
   }
 
   //dynamiclly updates title state attribute
@@ -88,14 +82,14 @@ class AddPage extends Component {
 
   render() {
     return (
-      //creates an input form for adding art pieces
+      //creates an input form for adding art
       <div>
         <h2>Add a piece of art</h2>
         <form>
           <div>
             <div className="input-group-prepend">
               <label className="input-group-text" id="inputGroup-sizing-lg">
-                Name of Painting
+                Name of Art Piece
               </label>
             </div>
             <input
