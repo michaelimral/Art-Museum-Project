@@ -9,8 +9,6 @@ class FindPage extends Component {
       pieces: [],
       length: 0
     };
-
-    this.getPieces = this.getPieces.bind(this);
   }
 
   //gets the values of the art array from db.json and assisgns them to state
@@ -22,17 +20,18 @@ class FindPage extends Component {
           pieces: response.data,
           length: response.data.length
         });
-      })
+        console.log(this.state.pieces)
+      }
+    )
       .catch(e => console.log(e));
   }
-
-  getPieces() {}
 
   render() {
     return (
       <div>
-        <ArtPiece id={0} />
-        <ArtPiece id={1} />
+        {this.state.pieces.map(data => {
+           return <ArtPiece id={data.id-1} />
+        })}
       </div>
     );
   }

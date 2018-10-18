@@ -28,6 +28,7 @@ class ArtPiece extends Component {
           location: response.data[this.props.id].data.location,
           info: response.data[this.props.id].data.info
         });
+        console.log(this.state);
       })
       .catch(e => console.log(e));
   }

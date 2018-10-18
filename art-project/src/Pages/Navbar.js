@@ -26,7 +26,7 @@ class Navbar extends Component {
               </li>
               <li className="nav-item">
                 <Link to="/find" className="nav-link">
-                  FindPage
+                  Find
                 </Link>
               </li>
             </ul>

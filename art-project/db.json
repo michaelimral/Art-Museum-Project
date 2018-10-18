@@ -21,6 +21,17 @@
         "info": "This is the most famous painting of all time."
       },
       "id": 2
+    },
+    {
+      "data": {
+        "title": "Girl in the Mirror",
+        "artist": "Piccasso",
+        "year": "1850",
+        "id": "asdf",
+        "location": "Louve, Paris, France",
+        "info": "Cool painting of a girl in a mirror."
+      },
+      "id": 3
     }
   ]
 }
