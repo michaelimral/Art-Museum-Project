@@ -19,8 +19,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <AddPage />
-          <ArtPiece />
+          <FindPage />
         </div>
       </BrowserRouter>
     );

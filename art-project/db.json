@@ -1,9 +1,26 @@
 {
   "art": [
     {
-      "id": 1,
-      "title": "Mona Lisa",
-      "artist": "Leonardo da Vinci"
+      "data": {
+        "title": "Rabil Jams",
+        "artist": "Michael Imral",
+        "year": "2017",
+        "id": "99",
+        "location": "St. Louis, Missouri, USA",
+        "info": "The most fire playlist to ever grace our mortal ears. All of those except MechaGodSparrow and Technohawk fall to it's glory."
+      },
+      "id": 1
+    },
+    {
+      "data": {
+        "title": "Mona Lisa",
+        "artist": "Leonardo da Vinci",
+        "year": "1527",
+        "id": "as624",
+        "location": "Louve, Paris, France",
+        "info": "This is the most famous painting of all time."
+      },
+      "id": 2
     }
   ]
 }

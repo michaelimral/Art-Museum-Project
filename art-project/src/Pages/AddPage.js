@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ArtPiece from "./ArtPiece";
-import axios from 'axios';
+import axios from "axios";
 
 //Parent component for the add art page
 //Read in the users inputs and converts it to an ArtPiece component
@@ -10,7 +10,7 @@ class AddPage extends Component {
     this.state = {
       title: "",
       artist: "",
-      year: 0,
+      year: 1,
       id: "",
       location: "",
       info: ""
@@ -32,9 +32,9 @@ class AddPage extends Component {
     e.preventDefault();
     console.log(this.state);
     let data = this.state;
-    axios.post('http://localhost:8080/art', {data})
-    .then(data => console.log(data))
-    .catch(e => console.log(e));
+    axios
+      .post("http://localhost:8080/art", { data })
+      .catch(e => console.log(e));
   }
 
   //dynamiclly updates title state attribute
