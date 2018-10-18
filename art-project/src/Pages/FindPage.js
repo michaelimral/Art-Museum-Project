@@ -6,7 +6,9 @@ class FindPage extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+          <ArtPiece />
+      </div>
     );
   }
 
