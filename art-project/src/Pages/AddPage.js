@@ -30,7 +30,6 @@ class AddPage extends Component {
   //handles the input field "submit" and posts the new data to db.json
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state);
     let data = this.state;
     axios
       .post("http://localhost:8080/art", { data })

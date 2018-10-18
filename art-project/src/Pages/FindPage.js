@@ -13,8 +13,7 @@ class FindPage extends Component {
     this.getPieces = this.getPieces.bind(this);
   }
 
-
-//gets the values of the art array from db.json and assisgns them to state
+  //gets the values of the art array from db.json and assisgns them to state
   componentDidMount() {
     axios
       .get("http://localhost:8080/art")

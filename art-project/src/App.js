@@ -6,22 +6,29 @@ import "./App.css";
 //Pages imports
 import Navbar from "./Pages/Navbar";
 import AddPage from "./Pages/AddPage";
-import ArtPieceCollection from './Pages/ArtPieceCollection';
-import FindPage from './Pages/FindPage';
-import ArtPiece from './Pages/ArtPiece';
+import ArtPieceCollection from "./Pages/ArtPieceCollection";
+import FindPage from "./Pages/FindPage";
+import ArtPiece from "./Pages/ArtPiece";
+import Home from './Pages/Home';
 
 //Router imports
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Navbar />
-          <FindPage />
-        </div>
-      </BrowserRouter>
+      <div className="App">
+        <Router>
+          <div>
+            <Navbar />
+            <div>
+              <Router path = "/" component = {Home} />
+              <Route path = "/add" component = {AddPage} />
+              <Route path = "/find" component = {FindPage} />
+            </div>
+          </div>
+        </Router>
+      </div>
     );
   }
 }

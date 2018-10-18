@@ -3,9 +3,8 @@ import React, { Component } from "react";
 
 //Page imports
 
-
 //Router Imports
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 //Navbar at the top of all pages
 class Navbar extends Component {
@@ -16,19 +15,19 @@ class Navbar extends Component {
           <div className="nav bg-light">
             <ul className="nav nav-pills">
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <Link to="/" className="nav-link">
                   ArtTracker2000
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link to="/add" className="nav-link">
                   Add
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Find
-                </a>
+                <Link to="/find" className="nav-link">
+                  FindPage
+                </Link>
               </li>
             </ul>
             <ul className="navbar-nav ml-auto">
