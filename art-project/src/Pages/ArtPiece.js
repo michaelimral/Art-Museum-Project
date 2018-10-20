@@ -1,6 +1,14 @@
+//dependency imports
 import React, { Component } from "react";
+
+//page imports
 import FindPage from "./FindPage";
+
+//server request imports
 import axios from "axios";
+
+//routing imports
+import { Link } from "react-router-dom";
 
 class ArtPiece extends Component {
   constructor(props) {
@@ -41,9 +49,7 @@ class ArtPiece extends Component {
             <div className="card-body">
               <h5 className="card-title">{this.state.title}</h5>
               <p className="card-text">{this.state.artist}</p>
-              <a href="#" className="btn btn-primary">
-                View
-              </a>
+              <Link to="/view" className="btn btn-primary">View</Link>
             </div>
           </div>
         </div>

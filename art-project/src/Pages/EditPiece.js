@@ -25,29 +25,27 @@ class EditArt extends Component {
     this.handleInfo = this.handleInfo.bind(this);
   }
 
-
   componentDidMount() {
     axios
       .get("http://localhost:8080/art/1")
-      .then(response =>{
+      .then(response => {
+        console.log(response.data.data);
         this.setState({
-          title: response.data.title,
-          artist: response.data[0].data.artist,
-          year: response.data[0].data.year,
-          id: response.data[0].data.id,
-          location: response.data[0].data.location,
-          info: response.data[0].data.info
-        })
-        console.log(response)
-      }
-      )
+          title: response.data.data.title,
+          artist: response.data.data.artist,
+          year: response.data.data.year,
+          id: response.data.data.id,
+          location: response.data.data.location,
+          info: response.data.data.info
+        });
+        console.log(this.state);
+      })
       .catch(e => console.log(e));
   }
 
   //handles the input field "submit" and puts the new data into db.json
   handleSubmit(e) {
     e.preventDefault();
-    let data = this.state;
   }
 
   //dynamiclly updates title state attribute

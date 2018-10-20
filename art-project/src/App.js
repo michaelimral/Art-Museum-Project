@@ -1,9 +1,9 @@
-//Dependency imports
+//dependency imports
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-//Pages imports
+//page imports
 import Navbar from "./Pages/Navbar";
 import AddPage from "./Pages/AddPage";
 import ArtPieceCollection from "./Pages/ArtPieceCollection";
@@ -14,7 +14,7 @@ import SignIn from "./Pages/SignIn";
 import EditPiece from "./Pages/EditPiece";
 import ViewPage from './Pages/ViewPage';
 
-//Router imports
+//router imports
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {

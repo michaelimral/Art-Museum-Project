@@ -29,11 +29,6 @@ class Navbar extends Component {
                   Find
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="/view" className="nav-link">
-                  View
-                </Link>
-              </li>
               <li className="form-group">
                 <Link to="/edit" className="nav-link">
                   Edit
