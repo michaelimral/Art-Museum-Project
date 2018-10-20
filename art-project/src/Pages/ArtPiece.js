@@ -36,13 +36,15 @@ class ArtPiece extends Component {
     return (
       //card element with title, artist, and a view button
       <div>
-        <div className="card" style={{ width: "18rem" }}>
-          <div className="card-body">
-            <h5 className="card-title">{this.state.title}</h5>
-            <p className="card-text">{this.state.artist}</p>
-            <a href="#" className="btn btn-primary">
-              View
-            </a>
+        <div className="col-sm">
+          <div className="card m-4" style={{ width: "18rem" }}>
+            <div className="card-body">
+              <h5 className="card-title">{this.state.title}</h5>
+              <p className="card-text">{this.state.artist}</p>
+              <a href="#" className="btn btn-primary">
+                View
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -21,6 +21,39 @@
         "info": "This is the most famous painting of all time."
       },
       "id": 2
+    },
+    {
+      "data": {
+        "title": "The Starry Night",
+        "artist": "Vincent van Gogh",
+        "year": "1889",
+        "id": "asdf",
+        "location": "Museum of Modern Art, New York City, New York, USA",
+        "info": "A cool painting."
+      },
+      "id": 3
+    },
+    {
+      "data": {
+        "title": "David",
+        "artist": "Michelangelo ",
+        "year": "1527",
+        "id": "asdf",
+        "location": "Rome, Italy",
+        "info": "This is a cool statue."
+      },
+      "id": 4
+    },
+    {
+      "data": {
+        "title": "Jolly Flatboatmen in Port",
+        "artist": "George Caleb Bingham",
+        "year": "1857",
+        "id": "123:1944",
+        "location": "St. Louis Art Museum, St. Louis, Missouri, USA",
+        "info": "\nThis painting depicts a flatboat docked at a wharf in St. Louis, where boatmen amuse themselves with homespun entertainment. The revelry is so lively that another flatboat has pulled alongside to observe it. George Caleb Bingham has organized the crowd in a pyramid, with the smiling dancer waving his red handkerchief at its apex. Though early 19th-century writers described flatboatmen as violent, rambunctious individuals living on the margins of society, Bingham’s rosy-cheeked river workers appear more mischievous than threatening."
+      },
+      "id": 5
     }
   ]
 }
