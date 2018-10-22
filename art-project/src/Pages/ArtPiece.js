@@ -3,6 +3,7 @@ import React, { Component } from "react";
 
 //page imports
 import FindPage from "./FindPage";
+import ViewPage from "./ViewPage";
 
 //server request imports
 import axios from "axios";
@@ -19,8 +20,11 @@ class ArtPiece extends Component {
       year: "",
       id: "",
       location: "",
-      info: ""
+      info: "",
+      showView: false
     };
+
+    this.showView = this.showView.bind(this);
   }
 
   //gets the values from db.json and sets them to state
@@ -40,19 +44,24 @@ class ArtPiece extends Component {
       .catch(e => console.log(e));
   }
 
+  showView(){
+    this.setState({showView: true});
+  }
+
   render() {
+    const display2 = <ViewPage key={this.props.id} id={this.props.id} />
     return (
       //card element with title, artist, and a view button
       <div>
-        <div className="col-sm">
-          <div className="card m-4" style={{ width: "18rem" }}>
-            <div className="card-body">
-              <h5 className="card-title">{this.state.title}</h5>
-              <p className="card-text">{this.state.artist}</p>
-              <Link to="/view" className="btn btn-primary">View</Link>
+        {this.state.showView ? display2 : (<div className="col-sm">
+            <div className="card m-4" style={{ width: "18rem" }}>
+              <div className="card-body">
+                <h5 className="card-title">{this.state.title}</h5>
+                <p className="card-text">{this.state.artist}</p>
+              <a className="btn btn-submit" href="#" onClick={this.showView}>View</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </div>)}
       </div>
     );
   }
