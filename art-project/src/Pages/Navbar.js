@@ -29,11 +29,6 @@ class Navbar extends Component {
                   Find
                 </Link>
               </li>
-              <li className="form-group">
-                <Link to="/edit" className="nav-link">
-                  Edit
-                </Link>
-              </li>
             </ul>
             <ul className="navbar-nav ml-auto">
               <li className="nav-item pull-right mb-3">

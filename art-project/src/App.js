@@ -30,7 +30,6 @@ class App extends Component {
               <Route path="/find" component={FindPage} />
               <Route path="/signin" component={SignIn} />
               <Route path="/view" component={ViewPage} />
-            <Route path="/edit" render={(props) => <EditPiece {...props} /> } />
             </div>
           </div>
         </Router>

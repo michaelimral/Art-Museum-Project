@@ -29,9 +29,6 @@ class EditArt extends Component {
     axios
       .get("http://localhost:8080/art/", this.props.id)
       .then(response => {
-        console.log(response);
-        console.log(response.data[this.props.id].data.title);
-        console.log(this.props.id);
         this.setState({
           title: response.data[this.props.id].data.title,
           artist: response.data[this.props.id].data.artist,
@@ -40,7 +37,6 @@ class EditArt extends Component {
           location: response.data[this.props.id].data.location,
           info: response.data[this.props.id].data.info
         });
-        console.log(this.state);
       })
       .catch(e => console.log(e));
   }
@@ -48,6 +44,8 @@ class EditArt extends Component {
   //handles the input field "submit" and puts the new data into db.json
   handleSubmit(e) {
     e.preventDefault();
+    axios.patch("http://localhost:8080/art/", this.props.id)
+
   }
 
   //dynamiclly updates title state attribute
