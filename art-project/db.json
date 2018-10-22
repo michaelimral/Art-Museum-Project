@@ -7,7 +7,7 @@
         "year": "1912",
         "id": "840:1983",
         "location": "St. Louis Art Museum",
-        "info": "\nOn April 15, 1912, the world’s largest luxury liner, Titanic, sank off the coast of Newfoundland; of the 2,200 passengers, 1,507 died. Beckmann was inspired by news accounts to produce this enormous canvas in which he focused on the lifeboats of the Titanic while placing the distant, brightly lit liner against an iron-red night sky. Beckmann sought to emulate a 19th-century French tradition of grand paintings of contemporary events. Here, his theme is the struggle for survival; boats list dangerously or have overturned. The largest lifeboat is crammed with women and children including one passenger still in her violet evening gown and earrings. Beckmann employs a palette of vibrant green and blue coloring to highlight the nightmarish quality of a scene in which ghostly heads can clearly be seen floating in the water.",
+        "info": "On April 15, 1912, the world’s largest luxury liner, Titanic, sank off the coast of Newfoundland; of the 2,200 passengers, 1,507 died. Beckmann was inspired by news accounts to produce this enormous canvas in which he focused on the lifeboats of the Titanic while placing the distant, brightly lit liner against an iron-red night sky. Beckmann sought to emulate a 19th-century French tradition of grand paintings of contemporary events. Here, his theme is the struggle for survival; boats list dangerously or have overturned. The largest lifeboat is crammed with women and children including one passenger still in her violet evening gown and earrings. Beckmann employs a palette of vibrant green and blue coloring to highlight the nightmarish quality of a scene in which ghostly heads can clearly be seen floating in the water.",
         "image": "https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/1/a0/1a034797-96c4-5fe7-97f2-856a339d8127/4f73497014aee.image.jpg"
       },
       "id": 1
@@ -47,6 +47,18 @@
         "image": "http://emuseum.slam.org/internal/media/dispatcher/71054/preview"
       },
       "id": 4
+    },
+    {
+      "data": {
+        "title": "Attachment",
+        "artist": "Sir Edwin Henry Landseer",
+        "year": "1829",
+        "id": "123:1987",
+        "location": "St. Louis Art Museum",
+        "info": "This painting illustrates Sir Walter Scott's poem \"Helvellyn,\" about a faithful dog that guarded her master's body after he had fallen while mountain climbing. Though the body went undiscovered for three months, the dog stayed to ward off the ravens and foxes that might have scavenged the remains. Edwin Henry Landseer dramatizes this scene through vivid contrasts of light and shadow, and by placing the man's body at the bottom of the composition, which emphasizes the great height from which it fell.",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/8022/preview"
+      },
+      "id": 5
     }
   ],
   "users": [

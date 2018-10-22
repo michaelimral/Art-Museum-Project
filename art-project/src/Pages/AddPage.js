@@ -36,6 +36,8 @@ class AddPage extends Component {
     axios
       .post("http://localhost:8080/art", { data })
       .catch(e => console.log(e));
+
+      window.location.reload();
   }
 
   //dynamiclly updates title state attribute

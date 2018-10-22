@@ -12,6 +12,7 @@ class FindPage extends Component {
     };
     this.handleSearch = this.handleSearch.bind(this);
     this.updateSearch = this.updateSearch.bind(this);
+    this.sortPieces = this.sortPieces.bind(this);
   }
 
   //gets the values of the art array from db.json and assisgns them to state
@@ -23,16 +24,26 @@ class FindPage extends Component {
           pieces: response.data,
           length: response.data.length
         });
-        console.log(response.data)
       })
+      .then(() => this.sortPieces())
       .catch(e => console.log(e));
+}
+
+
+//sorts alphabetically by title
+  sortPieces(){
+    let pieces = this.state.pieces;
+
+    pieces.sort((a, b) => {
+      let x = a.data.title.toLowerCase();
+      let y = b.data.title.toLowerCase();
+      return x < y ? -1 : x > y ? 1 : 0;
+    })
+
+    this.setState({pieces: pieces});
   }
 
-  updateSearch(e){
-    this.setState({searchValue: e.target.value});
-  }
-
-//support for searching by title
+//support for searching by title (will add fulll functionallity if time)
   handleSearch(e){
     e.preventDefault();
     let value = this.state.pieces;
@@ -41,6 +52,10 @@ class FindPage extends Component {
     const result = value.find(term => term.data.title === searchValue);
     console.log(result);
     return result;
+  }
+
+  updateSearch(e){
+    this.setState({searchValue: e.target.value});
   }
 
   render() {
