@@ -83,7 +83,9 @@ class AddPage extends Component {
     return (
       //creates an input form for adding art
       <div>
+        <span className="m-4">
         <h2>Add a piece of art</h2>
+        </span>
         <form>
           <div>
             <div className="input-group-prepend">
@@ -140,9 +142,9 @@ class AddPage extends Component {
             onChange={this.handleID}
           />
           <div className="input-group-prepend">
-            <label className="input-group-text" id="inputGroup-sizing-lg">
+            <span className="input-group-text" id="inputGroup-sizing-lg">
               Current Location
-            </label>
+            </span>
           </div>
           <input
             type="text"
@@ -152,6 +154,8 @@ class AddPage extends Component {
             aria-describedby="inputGroup-sizing-lg"
             onChange={this.handleLocation}
           />
+
+
           <div className="input group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-lg">
               Information/Description

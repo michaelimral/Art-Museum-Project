@@ -44,8 +44,8 @@ class EditArt extends Component {
   //handles the input field "submit" and puts the new data into db.json
   handleSubmit(e) {
     e.preventDefault();
-    axios.patch("http://localhost:8080/art/", this.props.id)
-    .then()
+    axios.put("http://localhost:8080/art/" + (this.props.id+1), {data: this.state})
+      .catch(e => console.log(e));
 
   }
 
@@ -95,7 +95,7 @@ class EditArt extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div className="card m-4">
           <form>
             <div>
               <div className="input-group-prepend">

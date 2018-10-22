@@ -27,9 +27,6 @@ class ViewPage extends Component {
     axios
       .get("http://localhost:8080/art")
       .then(response => {
-        console.log(response);
-        console.log(response.data[this.props.id].data.title);
-        console.log(this.props.id);
         this.setState({
           title: response.data[this.props.id].data.title,
           artist: response.data[this.props.id].data.artist,
@@ -38,7 +35,6 @@ class ViewPage extends Component {
           location: response.data[this.props.id].data.location,
           info: response.data[this.props.id].data.info
         });
-        console.log(this.state);
       })
       .catch(e => console.log(e));
   }
