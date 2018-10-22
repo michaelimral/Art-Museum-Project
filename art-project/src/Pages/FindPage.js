@@ -7,8 +7,11 @@ class FindPage extends Component {
     super(props);
     this.state = {
       pieces: [],
-      length: 0
+      length: 0,
+      searchValue: null
     };
+    this.handleSearch = this.handleSearch.bind(this);
+    this.updateSearch = this.updateSearch.bind(this);
   }
 
   //gets the values of the art array from db.json and assisgns them to state
@@ -20,10 +23,25 @@ class FindPage extends Component {
           pieces: response.data,
           length: response.data.length
         });
+        console.log(response.data)
       })
       .catch(e => console.log(e));
   }
 
+  updateSearch(e){
+    this.setState({searchValue: e.target.value});
+  }
+
+//support for searching by title
+  handleSearch(e){
+    e.preventDefault();
+    let value = this.state.pieces;
+    let searchValue = this.state.searchValue;
+    console.log(searchValue);
+    const result = value.find(term => term.data.title === searchValue);
+    console.log(result);
+    return result;
+  }
 
   render() {
     return (
@@ -32,7 +50,8 @@ class FindPage extends Component {
         <div className="container">
           <div className="row">
             {this.state.pieces.map(data => {
-              return <ArtPiece id={data.id - 1} key={data.id - 1} />;
+                return <ArtPiece id={data.id - 1} key={data.id - 1} />
+
             })}
           </div>
         </div>
