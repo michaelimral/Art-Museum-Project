@@ -25,15 +25,16 @@ class FindPage extends Component {
   }
 
 
-
   render() {
     return (
       //state maps each component with an id prop corresponding to their id in db.json
-      <div className="container">
-        <div className="row">
-          {this.state.pieces.map(data => {
-            return <ArtPiece id={data.id - 1} key={data.id - 1} />;
-          })}
+      <div>
+        <div className="container">
+          <div className="row">
+            {this.state.pieces.map(data => {
+              return <ArtPiece id={data.id - 1} key={data.id - 1} />;
+            })}
+          </div>
         </div>
       </div>
     );

@@ -14,7 +14,7 @@ class AddPage extends Component {
       id: "",
       location: "",
       info: "",
-      image: "",
+      image: ""
     };
 
     //binding this to all functions within the component
@@ -69,8 +69,8 @@ class AddPage extends Component {
   }
 
   //dynamically update the image state attribute
-  handleImage(e){
-    this.setState({ image: e.target.value })
+  handleImage(e) {
+    this.setState({ image: e.target.value });
   }
 
   //dynamically resets all input fields and state attributes
@@ -91,9 +91,9 @@ class AddPage extends Component {
       //creates an input form for adding art
       <div>
         <span className="m-4 ">
-        <h2>Add a piece of art</h2>
+          <h2>Add a piece of art</h2>
         </span>
-        <form>
+        <form autocomplete="off">
           <div>
             <div className="input-group-prepend">
               <label className="input-group-text" id="inputGroup-sizing-lg">

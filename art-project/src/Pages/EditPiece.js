@@ -82,6 +82,9 @@ class EditArt extends Component {
     this.setState({ info: e.target.value });
   }
 
+  handleImage(e) {
+    this.setState({ image: e.target.value });
+  }
   //dynamically resets all input fields and state attributes
   handleReset(e) {
     e.preventDefault();
@@ -91,7 +94,8 @@ class EditArt extends Component {
       year: 0,
       id: "",
       location: "",
-      info: ""
+      info: "",
+      image: ""
     });
   }
 

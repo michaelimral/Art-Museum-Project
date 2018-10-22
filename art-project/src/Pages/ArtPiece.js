@@ -8,7 +8,6 @@ import ViewPage from "./ViewPage";
 //extra imports
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Img from 'react-image';
 
 class ArtPiece extends Component {
   constructor(props) {
