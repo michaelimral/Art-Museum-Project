@@ -2,12 +2,12 @@
   "art": [
     {
       "data": {
-        "title": "Rabil Jams",
-        "artist": "Michael Imral",
-        "year": "2017",
-        "id": "asdf",
+        "title": "Sinking of the Titanic",
+        "artist": "Max Beckmann",
+        "year": "1912",
+        "id": "840:1983",
         "location": "St. Louis Art Museum, St. Louis, Missouri, USA",
-        "info": "This is the dopest playlist ever."
+        "info": "\nOn April 15, 1912, the world’s largest luxury liner, Titanic, sank off the coast of Newfoundland; of the 2,200 passengers, 1,507 died. Beckmann was inspired by news accounts to produce this enormous canvas in which he focused on the lifeboats of the Titanic while placing the distant, brightly lit liner against an iron-red night sky. Beckmann sought to emulate a 19th-century French tradition of grand paintings of contemporary events. Here, his theme is the struggle for survival; boats list dangerously or have overturned. The largest lifeboat is crammed with women and children including one passenger still in her violet evening gown and earrings. Beckmann employs a palette of vibrant green and blue coloring to highlight the nightmarish quality of a scene in which ghostly heads can clearly be seen floating in the water."
       },
       "id": 1
     },
@@ -51,9 +51,33 @@
         "year": "1857",
         "id": "123:1944",
         "location": "St. Louis Art Museum, St. Louis, Missouri, USA",
-        "info": "\nThis painting depicts a flatboat docked at a wharf in St. Louis, where boatmen amuse themselves with homespun entertainment. The revelry is so lively that another flatboat has pulled alongside to observe it. George Caleb Bingham has organized the crowd in a pyramid, with the smiling dancer waving his red handkerchief at its apex. Though early 19th-century writers described flatboatmen as violent, rambunctious individuals living on the margins of society, Bingham’s rosy-cheeked river workers appear more mischievous than threatening."
+        "info": "This painting depicts a flatboat docked at a wharf in St. Louis, where boatmen amuse themselves with homespun entertainment. The revelry is so lively that another flatboat has pulled alongside to observe it. George Caleb Bingham has organized the crowd in a pyramid, with the smiling dancer waving his red handkerchief at its apex. Though early 19th-century writers described flatboatmen as violent, rambunctious individuals living on the margins of society, Bingham’s rosy-cheeked river workers appear more mischievous than threatening."
       },
       "id": 5
+    },
+    {
+      "data": {
+        "title": "Swing Low, Sweet Chariot",
+        "artist": "John McCrady",
+        "year": "1937",
+        "id": "7:1938",
+        "location": "St. Louis Art Museum",
+        "info": "asdf"
+      },
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "data": {
+        "title": "Rabil Jams",
+        "artist": "Michael Imral",
+        "year": "2017",
+        "id": "asdf",
+        "location": "St. Louis Art Museum, St. Louis, Missouri, USA",
+        "info": "This is the dopest playlist ever."
+      },
+      "id": 1
     }
   ]
 }

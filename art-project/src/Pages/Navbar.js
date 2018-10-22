@@ -15,7 +15,7 @@ class Navbar extends Component {
           <div className="nav bg-light navbar-expand">
             <ul className="nav">
               <li className="nav-item navbar-brand">
-                <Link to="" className="nav-link m-4">
+                <Link to="/home" className="nav-link m-4">
                   ArtTracker2000
                 </Link>
               </li>

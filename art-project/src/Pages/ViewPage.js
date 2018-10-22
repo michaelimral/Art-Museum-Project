@@ -49,6 +49,7 @@ class ViewPage extends Component {
         {this.state.editStatus ? <EditPiece {...this.props} /> : (<div className="container">
           <div className="w-100 m-4">
             <ul className="list-group">
+              <li className="list-group-item"><img src="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/1/a0/1a034797-96c4-5fe7-97f2-856a339d8127/4f73497014aee.image.jpg" /></li>
               <li className="list-group-item">{this.state.title}</li>
               <li className="list-group-item">{this.state.artist}</li>
               <li className="list-group-item">{this.state.year}</li>

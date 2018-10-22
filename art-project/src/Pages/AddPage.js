@@ -83,7 +83,7 @@ class AddPage extends Component {
     return (
       //creates an input form for adding art
       <div>
-        <span className="m-4">
+        <span className="m-4 ">
         <h2>Add a piece of art</h2>
         </span>
         <form>

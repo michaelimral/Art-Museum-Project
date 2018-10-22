@@ -5,11 +5,10 @@ import React, { Component } from "react";
 import FindPage from "./FindPage";
 import ViewPage from "./ViewPage";
 
-//server request imports
+//extra imports
 import axios from "axios";
-
-//routing imports
 import { Link } from "react-router-dom";
+import Img from 'react-image';
 
 class ArtPiece extends Component {
   constructor(props) {
@@ -55,6 +54,7 @@ class ArtPiece extends Component {
       <div>
         {this.state.showView ? display2 : (<div className="col-sm">
             <div className="card m-4" style={{ width: "18rem" }}>
+              <img className="card-img-top" src="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/1/a0/1a034797-96c4-5fe7-97f2-856a339d8127/4f73497014aee.image.jpg" />
               <div className="card-body">
                 <h5 className="card-title">{this.state.title}</h5>
                 <p className="card-text">{this.state.artist}</p>
