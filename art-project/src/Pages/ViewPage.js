@@ -3,6 +3,7 @@ import React, { Component } from "react";
 
 //page imports
 import ArtPiece from "./ArtPiece";
+import EditPiece from './EditPiece';
 
 //
 import axios from "axios";
@@ -16,8 +17,10 @@ class ViewPage extends Component {
       year: "",
       id: "",
       location: "",
-      info: ""
+      info: "",
+      editStatue: false
     };
+    this.editPiece = this.editPiece.bind(this);
   }
 
   componentDidMount() {
@@ -40,10 +43,14 @@ class ViewPage extends Component {
       .catch(e => console.log(e));
   }
 
+  editPiece(){
+    this.setState({editStatus: true})
+  }
+
   render() {
     return (
       <div>
-        <div className="container">
+        {this.state.editStatus ? <EditPiece {...this.props} /> : (<div className="container">
           <div className="w-100 m-4">
             <ul className="list-group">
               <li className="list-group-item">{this.state.title}</li>
@@ -51,9 +58,11 @@ class ViewPage extends Component {
               <li className="list-group-item">{this.state.year}</li>
               <li className="list-group-item">{this.state.id}</li>
               <li className="list-group-item">{this.state.location}</li>
+            <li className="list-group-item">{this.state.info}</li>
+          <li className="list-group-item"><button className="btn" onClick={this.editPiece}>Edit</button></li>
             </ul>
           </div>
-        </div>
+        </div>)}
       </div>
     );
   }

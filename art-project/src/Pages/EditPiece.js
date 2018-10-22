@@ -27,16 +27,18 @@ class EditArt extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:8080/art/1")
+      .get("http://localhost:8080/art/", this.props.id)
       .then(response => {
-        console.log(response.data.data);
+        console.log(response);
+        console.log(response.data[this.props.id].data.title);
+        console.log(this.props.id);
         this.setState({
-          title: response.data.data.title,
-          artist: response.data.data.artist,
-          year: response.data.data.year,
-          id: response.data.data.id,
-          location: response.data.data.location,
-          info: response.data.data.info
+          title: response.data[this.props.id].data.title,
+          artist: response.data[this.props.id].data.artist,
+          year: response.data[this.props.id].data.year,
+          id: response.data[this.props.id].data.id,
+          location: response.data[this.props.id].data.location,
+          info: response.data[this.props.id].data.info
         });
         console.log(this.state);
       })
@@ -95,7 +97,6 @@ class EditArt extends Component {
     return (
       <div>
         <div>
-          <h2>Edit a piece of art</h2>
           <form>
             <div>
               <div className="input-group-prepend">
