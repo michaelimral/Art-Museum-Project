@@ -45,6 +45,7 @@ class EditArt extends Component {
   handleSubmit(e) {
     e.preventDefault();
     axios.patch("http://localhost:8080/art/", this.props.id)
+    .then()
 
   }
 
