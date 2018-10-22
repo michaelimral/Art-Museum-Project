@@ -6,65 +6,47 @@
         "artist": "Max Beckmann",
         "year": "1912",
         "id": "840:1983",
-        "location": "St. Louis Art Museum, St. Louis, Missouri, USA",
-        "info": "\nOn April 15, 1912, the world’s largest luxury liner, Titanic, sank off the coast of Newfoundland; of the 2,200 passengers, 1,507 died. Beckmann was inspired by news accounts to produce this enormous canvas in which he focused on the lifeboats of the Titanic while placing the distant, brightly lit liner against an iron-red night sky. Beckmann sought to emulate a 19th-century French tradition of grand paintings of contemporary events. Here, his theme is the struggle for survival; boats list dangerously or have overturned. The largest lifeboat is crammed with women and children including one passenger still in her violet evening gown and earrings. Beckmann employs a palette of vibrant green and blue coloring to highlight the nightmarish quality of a scene in which ghostly heads can clearly be seen floating in the water."
+        "location": "St. Louis Art Museum",
+        "info": "\nOn April 15, 1912, the world’s largest luxury liner, Titanic, sank off the coast of Newfoundland; of the 2,200 passengers, 1,507 died. Beckmann was inspired by news accounts to produce this enormous canvas in which he focused on the lifeboats of the Titanic while placing the distant, brightly lit liner against an iron-red night sky. Beckmann sought to emulate a 19th-century French tradition of grand paintings of contemporary events. Here, his theme is the struggle for survival; boats list dangerously or have overturned. The largest lifeboat is crammed with women and children including one passenger still in her violet evening gown and earrings. Beckmann employs a palette of vibrant green and blue coloring to highlight the nightmarish quality of a scene in which ghostly heads can clearly be seen floating in the water.",
+        "image": "https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/1/a0/1a034797-96c4-5fe7-97f2-856a339d8127/4f73497014aee.image.jpg"
       },
       "id": 1
     },
     {
       "data": {
-        "title": "Mona Lisa",
-        "artist": "Leonardo da Vinci",
-        "year": "1527",
-        "id": "as624",
-        "location": "Louve, Paris, France",
-        "info": "This is the most famous painting of all time."
+        "title": "Red Evening Sky",
+        "artist": "Emil Nolde",
+        "year": "1959",
+        "id": "924:1983",
+        "location": "St. Louis Art Museum",
+        "info": "\nIn this incandescent view animated by three sailboats, the sky is streaked with fuschia and mauve, and the setting sun is reflected on the sea. Emil Nolde’s landscape is probably informed by his memories of the South Seas, which he had visited the previous year. Nolde believed that intense colors could evoke sounds as well as deep emotion; he wrote of “colors in vibration, pealing like silver bells and clanging like bronze bells, proclaiming happiness, passion and love, soul, blood, and death.”",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/7240/resize%3Aformat%3Dfull"
       },
       "id": 2
     },
     {
       "data": {
-        "title": "The Starry Night",
-        "artist": "Vincent van Gogh",
-        "year": "1889",
-        "id": "asdf",
-        "location": "Museum of Modern Art, New York City, New York, USA",
-        "info": "A cool painting."
+        "title": "Rising Moon",
+        "artist": " Karl Schmidt-Rottluff",
+        "year": "1970",
+        "id": "938:1983",
+        "location": "St. Louis Art Museum",
+        "info": "A solitary cart waits on an empty path receding between gabled cottages; in the distance are a steep mountain and glowing harvest moon. Karl Schmidt-Rottluff’s mysterious work was inspired by the landscape around the Baltic coast of Germany. The artist represents his scene with vibrant, non-naturalistic colors: the mountain is rendered in intense red and magenta and the houses in ultramarine blue. Schmidt-Rottluff was the youngest member of Die Brücke (The Bridge) and focused largely on landscapes.",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/7270/resize%3Aformat%3Dfull"
       },
       "id": 3
     },
     {
       "data": {
-        "title": "David",
-        "artist": "Michelangelo ",
-        "year": "1527",
-        "id": "asdf",
-        "location": "Rome, Italy",
-        "info": "This is a cool statue."
+        "title": "Stairway at Auvers",
+        "artist": "Vincent van Gogh",
+        "year": "1890",
+        "id": "1:1935",
+        "location": "St. Louis Art Museum",
+        "info": "The expressive, swirling lines of the foreground road move backward to the center of the composition and join the base of a stairway on which an elderly man with a stick descends. Chestnut trees are in flower to the right and left, while two pair of women walk along the road. Vincent van Gogh’s work is of a compact, almost claustrophobic density and the sky is barely seen. In one of his final letters, Van Gogh described Auvers as “of a grave beauty, the real countryside, characteristic and picturesque.”",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/71054/preview"
       },
       "id": 4
-    },
-    {
-      "data": {
-        "title": "Jolly Flatboatmen in Port",
-        "artist": "George Caleb Bingham",
-        "year": "1857",
-        "id": "123:1944",
-        "location": "St. Louis Art Museum, St. Louis, Missouri, USA",
-        "info": "This painting depicts a flatboat docked at a wharf in St. Louis, where boatmen amuse themselves with homespun entertainment. The revelry is so lively that another flatboat has pulled alongside to observe it. George Caleb Bingham has organized the crowd in a pyramid, with the smiling dancer waving his red handkerchief at its apex. Though early 19th-century writers described flatboatmen as violent, rambunctious individuals living on the margins of society, Bingham’s rosy-cheeked river workers appear more mischievous than threatening."
-      },
-      "id": 5
-    },
-    {
-      "data": {
-        "title": "Swing Low, Sweet Chariot",
-        "artist": "John McCrady",
-        "year": "1937",
-        "id": "7:1938",
-        "location": "St. Louis Art Museum",
-        "info": "asdf"
-      },
-      "id": 6
     }
   ],
   "users": [

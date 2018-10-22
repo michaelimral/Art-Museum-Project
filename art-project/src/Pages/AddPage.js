@@ -13,7 +13,8 @@ class AddPage extends Component {
       year: 1,
       id: "",
       location: "",
-      info: ""
+      info: "",
+      image: "",
     };
 
     //binding this to all functions within the component
@@ -25,6 +26,7 @@ class AddPage extends Component {
     this.handleID = this.handleID.bind(this);
     this.handleLocation = this.handleLocation.bind(this);
     this.handleInfo = this.handleInfo.bind(this);
+    this.handleImage = this.handleImage.bind(this);
   }
 
   //handles the input field "submit" and posts the new data to db.json
@@ -64,6 +66,11 @@ class AddPage extends Component {
   //dynamically updates the description state attribute
   handleInfo(e) {
     this.setState({ info: e.target.value });
+  }
+
+  //dynamically update the image state attribute
+  handleImage(e){
+    this.setState({ image: e.target.value })
   }
 
   //dynamically resets all input fields and state attributes
@@ -154,8 +161,6 @@ class AddPage extends Component {
             aria-describedby="inputGroup-sizing-lg"
             onChange={this.handleLocation}
           />
-
-
           <div className="input group-prepend">
             <span className="input-group-text" id="inputGroup-sizing-lg">
               Information/Description
@@ -170,6 +175,19 @@ class AddPage extends Component {
               onChange={this.handleInfo}
             />
           </div>
+          <div className="input-group-prepend">
+            <span className="input-group-text" id="inputGroup-sizing-lg">
+              Image Link
+            </span>
+          </div>
+          <input
+            type="text"
+            name="location"
+            value={this.state.image}
+            className="form-control mb-4"
+            aria-describedby="inputGroup-sizing-lg"
+            onChange={this.handleImage}
+          />
           <input
             className="btn btn-submit btn-primary m-4"
             type="submit"

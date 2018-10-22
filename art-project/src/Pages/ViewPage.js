@@ -18,6 +18,7 @@ class ViewPage extends Component {
       id: "",
       location: "",
       info: "",
+      image:"",
       editStatue: false
     };
     this.editPiece = this.editPiece.bind(this);
@@ -33,7 +34,8 @@ class ViewPage extends Component {
           year: response.data[this.props.id].data.year,
           id: response.data[this.props.id].data.id,
           location: response.data[this.props.id].data.location,
-          info: response.data[this.props.id].data.info
+          info: response.data[this.props.id].data.info,
+          image: response.data[this.props.id].data.image
         });
       })
       .catch(e => console.log(e));
@@ -49,7 +51,7 @@ class ViewPage extends Component {
         {this.state.editStatus ? <EditPiece {...this.props} /> : (<div className="container">
           <div className="w-100 m-4">
             <ul className="list-group">
-              <li className="list-group-item"><img src="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/1/a0/1a034797-96c4-5fe7-97f2-856a339d8127/4f73497014aee.image.jpg" /></li>
+              <li className="list-group-item"><img src={this.state.image} /></li>
               <li className="list-group-item">{this.state.title}</li>
               <li className="list-group-item">{this.state.artist}</li>
               <li className="list-group-item">{this.state.year}</li>

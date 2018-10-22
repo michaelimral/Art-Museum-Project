@@ -20,6 +20,7 @@ class ArtPiece extends Component {
       id: "",
       location: "",
       info: "",
+      image: "",
       showView: false
     };
 
@@ -37,7 +38,8 @@ class ArtPiece extends Component {
           year: response.data[this.props.id].data.year,
           id: response.data[this.props.id].data.id,
           location: response.data[this.props.id].data.location,
-          info: response.data[this.props.id].data.info
+          info: response.data[this.props.id].data.info,
+          image: response.data[this.props.id].data.image
         });
       })
       .catch(e => console.log(e));
@@ -54,7 +56,7 @@ class ArtPiece extends Component {
       <div>
         {this.state.showView ? display2 : (<div className="col-sm">
             <div className="card m-4" style={{ width: "18rem" }}>
-              <img className="card-img-top" src="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/1/a0/1a034797-96c4-5fe7-97f2-856a339d8127/4f73497014aee.image.jpg" />
+              <img className="card-img-top" src={this.state.image} />
               <div className="card-body">
                 <h5 className="card-title">{this.state.title}</h5>
                 <p className="card-text">{this.state.artist}</p>

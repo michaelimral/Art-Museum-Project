@@ -11,7 +11,8 @@ class EditArt extends Component {
       year: 1,
       id: "",
       location: "",
-      info: ""
+      info: "",
+      image: ""
     };
 
     //binding this to all functions within the component
@@ -35,7 +36,8 @@ class EditArt extends Component {
           year: response.data[this.props.id].data.year,
           id: response.data[this.props.id].data.id,
           location: response.data[this.props.id].data.location,
-          info: response.data[this.props.id].data.info
+          info: response.data[this.props.id].data.info,
+          image: response.data[this.props.id].data.image
         });
       })
       .catch(e => console.log(e));
@@ -46,6 +48,7 @@ class EditArt extends Component {
     e.preventDefault();
     axios.put("http://localhost:8080/art/" + (this.props.id+1), {data: this.state})
       .catch(e => console.log(e));
+      window.location.reload();
 
   }
 
@@ -178,6 +181,19 @@ class EditArt extends Component {
                 onChange={this.handleInfo}
               />
             </div>
+            <div className="input-group-prepend">
+              <span className="input-group-text" id="inputGroup-sizing-lg">
+                Image Link
+              </span>
+            </div>
+            <input
+              type="text"
+              name="location"
+              value={this.state.image}
+              className="form-control mb-4"
+              aria-describedby="inputGroup-sizing-lg"
+              onChange={this.handleImage}
+            />
             <input
               className="btn btn-submit btn-primary m-4"
               type="submit"
