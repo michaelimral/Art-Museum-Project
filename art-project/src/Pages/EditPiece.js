@@ -199,17 +199,24 @@ class EditArt extends Component {
               onChange={this.handleImage}
             />
             <input
-              className="btn btn-submit btn-primary m-4"
+              className="btn btn-submit btn-primary m-1"
               type="submit"
               value="Submit"
               onClick={this.handleSubmit}
             />
             <input
-              className="btn btn submit btn-danger"
+              className="btn btn submit btn-danger m-1"
               type="submit"
               value="Reset"
               name="reset"
               onClick={this.handleReset}
+            />
+            <input
+              className="btn m-1"
+              type="submit"
+              value="Go Back"
+              name="back"
+              onClick={this.props.showView}
             />
           </form>
         </div>

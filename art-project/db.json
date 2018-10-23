@@ -71,6 +71,30 @@
         "image": "http://emuseum.slam.org/internal/media/dispatcher/81912/preview"
       },
       "id": 6
+    },
+    {
+      "data": {
+        "title": "Harlequin and Columbine",
+        "artist": " Heinrich Campendonk",
+        "year": "1913",
+        "id": "874:1983",
+        "location": "St. Louis Art Museum",
+        "info": "N/A",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/7157/preview"
+      },
+      "id": 7
+    },
+    {
+      "data": {
+        "title": "Jolly Flatboatmen in Port",
+        "artist": " George Caleb Bingham",
+        "year": "1857",
+        "id": " 123:1944",
+        "location": "St. Louis Art Museum",
+        "info": "This painting depicts a flatboat docked at a wharf in St. Louis, where boatmen amuse themselves with homespun entertainment. The revelry is so lively that another flatboat has pulled alongside to observe it. George Caleb Bingham has organized the crowd in a pyramid, with the smiling dancer waving his red handkerchief at its apex. Though early 19th-century writers described flatboatmen as violent, rambunctious individuals living on the margins of society, Bingham’s rosy-cheeked river workers appear more mischievous than threatening.",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/71623/preview"
+      },
+      "id": 8
     }
   ],
   "users": [

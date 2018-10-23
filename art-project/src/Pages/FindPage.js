@@ -43,7 +43,7 @@ class FindPage extends Component {
     this.setState({pieces: pieces});
   }
 
-//support for searching by title (will add fulll functionallity if time)
+//support for searching by title (will add full functionallity if time)
   handleSearch(e){
     e.preventDefault();
     let value = this.state.pieces;

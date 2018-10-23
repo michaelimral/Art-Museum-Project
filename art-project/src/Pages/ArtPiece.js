@@ -44,6 +44,7 @@ class ArtPiece extends Component {
       .catch(e => console.log(e));
   }
 
+//used to the showpage component
   showView(){
     this.setState({showView: !this.state.showView});
   }

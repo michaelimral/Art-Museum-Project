@@ -21,6 +21,8 @@ class ViewPage extends Component {
       image:"",
       editStatue: false
     };
+
+    //binding this
     this.editPiece = this.editPiece.bind(this);
   }
 
@@ -43,14 +45,15 @@ class ViewPage extends Component {
       console.log(this.props.changeView)
   }
 
+//used to display edit
   editPiece(){
-    this.setState({editStatus: true})
+    this.setState({editStatus: !this.state.editStatus})
   }
 
   render() {
     return (
       <div>
-        {this.state.editStatus ? <EditPiece {...this.props} /> : (<div className="container">
+        {this.state.editStatus ? <EditPiece {...this.props} showView={this.editPiece}/> : (<div className="container">
           <div className="w-100 m-4">
             <ul className="list-group">
               <li className="list-group-item"><img src={this.state.image} /></li>
