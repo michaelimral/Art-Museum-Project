@@ -37,7 +37,7 @@ class AddPage extends Component {
       .post("http://localhost:8080/art", { data })
       .catch(e => console.log(e));
 
-      window.location.reload();
+    window.location.reload();
   }
 
   //dynamiclly updates title state attribute
@@ -95,12 +95,10 @@ class AddPage extends Component {
         <span className="m-4 ">
           <h2>Add a piece of art</h2>
         </span>
-        <form autocomplete="off">
-          <div>
+        <form autocomplete="off" className="form-group">
+          <div className="form-group">
             <div className="input-group-prepend">
-              <label className="input-group-text" id="inputGroup-sizing-lg">
-                Name of Art Piece
-              </label>
+              <span className="input-group-text">Title of Piece</span>
             </div>
             <input
               type="text"

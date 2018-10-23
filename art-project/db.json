@@ -95,6 +95,18 @@
         "image": "http://emuseum.slam.org/internal/media/dispatcher/71623/preview"
       },
       "id": 8
+    },
+    {
+      "data": {
+        "title": "Café",
+        "artist": " George Grosz",
+        "year": "1916",
+        "id": "889:1983",
+        "location": "St. Louis Art Museum",
+        "info": "In this satirical painting, George Grosz presents three card-playing men in a Berlin café illuminated by an eerie red glow. The bloated figures represent the well-fed, greedy leaders of capitalist society, whom the artist saw as the source of many social ills. Two of the men glance sideways with beady eyes while the third collects his winnings. Painted in the midst of World War I, this work reveals the artist’s keen sense of social injustice while also showing his fascination with metropolitan nightlife.",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/7186/preview"
+      },
+      "id": 9
     }
   ],
   "users": [
