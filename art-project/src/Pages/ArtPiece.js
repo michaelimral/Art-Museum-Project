@@ -45,11 +45,11 @@ class ArtPiece extends Component {
   }
 
   showView(){
-    this.setState({showView: true});
+    this.setState({showView: !this.state.showView});
   }
 
   render() {
-    const display2 = <ViewPage key={this.props.id} id={this.props.id} />
+    const display2 = <ViewPage key={this.props.id} id={this.props.id} changeView={this.showView}/>
     return (
       //card element with title, artist, and a view button
       <div>

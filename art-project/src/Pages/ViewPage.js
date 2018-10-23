@@ -39,6 +39,8 @@ class ViewPage extends Component {
         });
       })
       .catch(e => console.log(e));
+
+      console.log(this.props.changeView)
   }
 
   editPiece(){
@@ -59,6 +61,7 @@ class ViewPage extends Component {
               <li className="list-group-item">{this.state.location}</li>
             <li className="list-group-item">{this.state.info}</li>
           <li className="list-group-item"><button className="btn" onClick={this.editPiece}>Edit</button></li>
+          <li className="list-group-item"><button className="btn" onClick={this.props.changeView}>Go Back</button></li>
             </ul>
           </div>
         </div>)}
