@@ -75,23 +75,7 @@ class FindPage extends Component {
     </div>);
     return (
       //state maps each component with an id prop corresponding to their id in db.json
-      <div>
-        <form className="form-inline my-2 my-lg-0">
-          <input
-            className="form-control mr-sm-2"
-            type="text"
-            placeholder="Search"
-            aria-label="Search"
-            onChange={this.updateSearch}
-          />
-          <button
-            className="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-            onClick={this.printSearch}
-          >
-            Search
-          </button>
-        </form>
+      <div className="background-image">
         <div className="container">
             {defaultValue}
         </div>
