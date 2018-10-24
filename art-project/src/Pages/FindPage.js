@@ -48,9 +48,7 @@ class FindPage extends Component {
     let value = this.state.pieces;
     let searchValue = this.state.searchValue;
     console.log(searchValue);
-    const result = value.find(
-      term => term.data.title === searchValue
-    );
+    const result = value.find(term => term.data.title === searchValue);
     console.log(result);
     return result;
   }
@@ -59,26 +57,22 @@ class FindPage extends Component {
     this.setState({ searchValue: e.target.value });
   }
 
-  printSearch(e){
+  printSearch(e) {
     e.preventDefault();
-
-
-       }
-
+  }
 
   render() {
-    const defaultValue = (<div className="row">
-
-      {this.state.pieces.map(data => {
-        return (<ArtPiece id={data.id - 1} key={data.id - 1} />)
-      })}
-    </div>);
+    const defaultValue = (
+      <div className="row">
+        {this.state.pieces.map(data => {
+          return <ArtPiece id={data.id - 1} key={data.id - 1} />;
+        })}
+      </div>
+    );
     return (
       //state maps each component with an id prop corresponding to their id in db.json
       <div className="background-image">
-        <div className="container">
-            {defaultValue}
-        </div>
+        <div className="fluid-container">{defaultValue}</div>
       </div>
     );
   }

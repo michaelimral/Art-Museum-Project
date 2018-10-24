@@ -119,6 +119,18 @@
         "image": "http://emuseum.slam.org/internal/media/dispatcher/68472/preview"
       },
       "id": 10
+    },
+    {
+      "data": {
+        "title": "Duke of Wellington (after Sir Thomas Lawrence)",
+        "artist": "William Essex",
+        "year": "1846",
+        "id": "28:1933.56",
+        "location": "St. Louis Art Museum",
+        "info": "This is the Duke of Wellington.",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/81672/preview"
+      },
+      "id": 11
     }
   ],
   "users": [
