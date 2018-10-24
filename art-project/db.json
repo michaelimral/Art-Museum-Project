@@ -107,6 +107,18 @@
         "image": "http://emuseum.slam.org/internal/media/dispatcher/7186/preview"
       },
       "id": 9
+    },
+    {
+      "data": {
+        "title": "Mandolin and Vase of Flowers",
+        "artist": " Pablo Picasso",
+        "year": "1934",
+        "id": "126:1944",
+        "location": "St. Louis Art Museum",
+        "info": "This composition is united by a horizontal “s” curve which runs down the right-hand side of a flower vase and across the center of the composition, under a yellow piece of fruit, up the left side of a goblet, and around a mauve mandolin. Pablo Picasso’s forms are rendered in color patches and dark outlines, creating an effect of stained glass. The signature at top left indicates that Picasso painted this work in a single day on April 14, 1934 at his country retreat of Boisgeloup, outside of Paris.\n",
+        "image": "http://emuseum.slam.org/internal/media/dispatcher/68472/preview"
+      },
+      "id": 10
     }
   ],
   "users": [
