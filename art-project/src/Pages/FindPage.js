@@ -63,7 +63,7 @@ class FindPage extends Component {
 
   render() {
     const defaultValue = (
-      <div className="row">
+      <div className="row flexgrid">
         {this.state.pieces.map(data => {
           return <ArtPiece id={data.id - 1} key={data.id - 1} />;
         })}
