@@ -1,7 +1,4 @@
-//dependency imports
 import React, { Component } from "react";
-
-//Router Imports
 import { Link } from "react-router-dom";
 
 //parent component for the Find Page
@@ -18,7 +15,6 @@ class FindContainer extends Component {
               <div className="card-body">
                 <h5 className="card-title">Modern Art</h5>
                   <Link to="/findpage">View</Link>
-
               </div>
             </div>
           </div>

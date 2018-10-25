@@ -1,9 +1,4 @@
-//Dependency Imports
 import React, { Component } from "react";
-
-//Page imports
-
-//Router Imports
 import { Link } from "react-router-dom";
 
 //Navbar at the top of all pages

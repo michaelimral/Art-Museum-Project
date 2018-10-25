@@ -1,11 +1,6 @@
-//dependency imports
 import React, { Component } from "react";
-
-//page imports
 import ArtPiece from "./ArtPiece";
 import EditPiece from './EditPiece';
-
-//
 import axios from "axios";
 
 class ViewPage extends Component {

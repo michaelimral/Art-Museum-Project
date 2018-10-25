@@ -1,11 +1,6 @@
-//dependency imports
 import React, { Component } from "react";
-
-//page imports
 import FindPage from "./FindPage";
 import ViewPage from "./ViewPage";
-
-//extra imports
 import axios from "axios";
 import { Link } from "react-router-dom";
 
