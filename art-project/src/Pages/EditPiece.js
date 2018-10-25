@@ -100,6 +100,7 @@ class EditArt extends Component {
   }
 
   render() {
+    //input form that reads in the data
     return (
       <div>
         <div className="card m-4">

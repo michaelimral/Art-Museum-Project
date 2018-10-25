@@ -1,5 +1,10 @@
+//dependency imports
 import React, { Component } from "react";
+
+//page imports
 import ArtPiece from "./ArtPiece";
+
+//request imports
 import axios from "axios";
 
 class FindPage extends Component {

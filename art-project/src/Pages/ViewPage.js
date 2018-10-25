@@ -45,12 +45,13 @@ class ViewPage extends Component {
       console.log(this.props.changeView)
   }
 
-//used to display edit
+//used to display edit page
   editPiece(){
     this.setState({editStatus: !this.state.editStatus})
   }
 
   render() {
+    //creates a list of the elements within the specified painting
     return (
       <div>
         {this.state.editStatus ? <EditPiece {...this.props} showView={this.editPiece}/> : (<div className="container">
