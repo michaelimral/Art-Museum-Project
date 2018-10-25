@@ -4,6 +4,7 @@ import React, { Component } from "react";
 //Router Imports
 import { Link } from "react-router-dom";
 
+//parent component for the Find Page
 class FindContainer extends Component {
   render() {
     return (
