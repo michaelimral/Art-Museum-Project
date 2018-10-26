@@ -72,6 +72,7 @@ class FindPage extends Component {
     return (
       //state maps each component with an id prop corresponding to their id in db.json
       <div className="background-image">
+        <h1 className="display-5 font-weight-normal m-4">Modern Art</h1>
         <div className="fluid-container">{defaultValue}</div>
       </div>
     );
