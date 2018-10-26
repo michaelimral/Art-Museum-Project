@@ -135,26 +135,14 @@
     {
       "data": {
         "title": "Before the Mirror",
-        "artist": " Oskar Schlemmer",
+        "artist": "Oskar Schlemmer",
         "year": "1931",
-        "id": " 937:1983",
+        "id": "asdf",
         "location": "St. Louis Art Museum",
         "info": "N/A",
-        "image": "http://emuseum.slam.org/internal/media/dispatcher/7268/preview"
+        "image": "https://www.the-athenaeum.org/art/display_image.php?id=570364"
       },
       "id": 12
-    },
-    {
-      "data": {
-        "title": "Landscape with Cows, Sailing Boat and Figures",
-        "artist": " August Macke",
-        "year": "1914",
-        "id": "911:1983",
-        "location": "St. Louis Art Museum",
-        "info": "This complex composition shows forms arranged at different angles around the frame: two cows are at the base while the inverted figure of a woman in a blue blouse is visible at upper left, and a man holding a hat with a raised arm at upper right. August Macke’s playful work disorients the viewer. Macke was killed in battle in World War I at the young age of twenty-seven, just two months after painting this picture.",
-        "image": "http://emuseum.slam.org/internal/media/dispatcher/7219/preview"
-      },
-      "id": 13
     }
   ],
   "users": [

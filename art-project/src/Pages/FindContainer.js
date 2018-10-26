@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 //parent component for the Find Page
+//shows categories of pieces for the specified museum (only shows modern right now)
 class FindContainer extends Component {
   render() {
     return (
@@ -14,7 +15,7 @@ class FindContainer extends Component {
             <div className="card m-4" style={{ width: "18rem" }}>
               <div className="card-body">
                 <h5 className="card-title">Modern Art</h5>
-                  <Link to="/findpage">View</Link>
+                  <Link to="/findpiece">View</Link>
               </div>
             </div>
           </div>

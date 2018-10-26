@@ -8,10 +8,10 @@ import Navbar from "./Pages/Navbar";
 import AddPage from "./Pages/AddPage";
 import FindPage from "./Pages/FindPage";
 import ArtPiece from "./Pages/ArtPiece";
-import SignIn from "./Pages/SignIn";
 import EditPiece from "./Pages/EditPiece";
 import ViewPage from './Pages/ViewPage';
 import FindContainer from './Pages/FindContainer';
+import MuseumPage from './Pages/MuseumPage';
 
 //router imports
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -25,10 +25,10 @@ class App extends Component {
             <Navbar />
             <div>
               <Route path="/add" component={AddPage} />
-              <Route path="/find" component={FindContainer} />
-              <Route path="/signin" component={SignIn} />
+              <Route path="/find" component={MuseumPage} />
               <Route path="/view" component={ViewPage} />
-              <Route path="/findpage" component={FindPage} />
+              <Route path="/findpiece" component={FindPage} />
+              <Route path="/select" component={FindContainer} />
             </div>
           </div>
         </Router>

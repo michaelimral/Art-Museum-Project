@@ -13,7 +13,8 @@ class EditArt extends Component {
       location: "",
       info: "",
       image: ""
-    };
+    }
+
 
     //binding this to all functions within the component
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -24,6 +25,7 @@ class EditArt extends Component {
     this.handleID = this.handleID.bind(this);
     this.handleLocation = this.handleLocation.bind(this);
     this.handleInfo = this.handleInfo.bind(this);
+    this.handleImage = this.handleImage.bind(this);
   }
 
   componentDidMount() {
@@ -82,6 +84,7 @@ class EditArt extends Component {
     this.setState({ info: e.target.value });
   }
 
+  //dynamically uptates the image state attribute
   handleImage(e) {
     this.setState({ image: e.target.value });
   }
@@ -104,7 +107,7 @@ class EditArt extends Component {
     return (
       <div>
         <div className="card m-4">
-          <form>
+          <form autocomplete="off" className="form-group">
             <div>
               <div className="input-group-prepend">
                 <label className="input-group-text" id="inputGroup-sizing-lg">
@@ -193,7 +196,7 @@ class EditArt extends Component {
             </div>
             <input
               type="text"
-              name="location"
+              name="image"
               value={this.state.image}
               className="form-control mb-4"
               aria-describedby="inputGroup-sizing-lg"
